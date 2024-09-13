@@ -2,7 +2,7 @@ const translations = {
     "en": {
         "firstItem": "Look my portfolio !",
         "secondItem": "This project Repository",
-        "project1" :"Project 1",
+        "project1" :"Pos system",
         "project2" :"Student Attendance System",
         "project3" :"Rich Text Editor",
         "footer" :"Made by Johnny Alysson"
@@ -10,7 +10,7 @@ const translations = {
     "PT-BR": {
         "firstItem": "Ver meu portfólio",
         "secondItem": "Repositório desse projeto",
-        "project1" :"Projeto 1",
+        "project1" :"Sistema PDV",
         "project2" :"Sistema de chamada de alunos",
         "project3" :"Editor de texto",
         "footer" :"Feito com ♥ por Johnny Alysson baseado no curso Discovery da Rockseat",

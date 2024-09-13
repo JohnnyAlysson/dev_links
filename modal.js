@@ -4,27 +4,32 @@ const modalTitle = document.getElementById("projectTitle");
 const modalLink = document.getElementById("projectLink");
 const closeBtn = document.getElementsByClassName("close")[0];
 
-function showModal(projectId, projectUrl) {
+function showModal(projectId) {
     const projectData = {
         portfolio: {
             title: "My Portfolio",
-            image: "./assets/portfolio.jpg"
-        },
-        repo: {
+            image: "./assets/portfolio.jpg",
+            url: "https://github.com/JohnnyAlysson"
+          },
+          repo: {
             title: "Project Repository",
-            image: "./assets/repo.jpg"
+            image: "./assets/repo.jpg",
+            url: "https://github.com/JohnnyAlysson/dev_links"
         },
         project1: {
-            title: "Project 1",
-            image: "./assets/project1.jpg"
-        },
+            title: "POS System",
+            image: "./assets/project1.jpg",
+            url: "https://github.com/JohnnyAlysson/projeto_ux_ui"
+          },
         project2: {
             title: "Student Attendance System",
-            image: "./assets/project2.jpg"
-        },
+            image: "./assets/project2.jpg",
+            url: "https://github.com/JohnnyAlysson/projeto_ux_ui"
+          },
         project3: {
             title: "Rich Text Editor",
-            image: "./assets/project3.jpg"
+            image: "./assets/project3.jpg",
+            url: "https://github.com/JohnnyAlysson/projeto_ux_ui"
         }
     };
 
@@ -32,7 +37,7 @@ function showModal(projectId, projectUrl) {
     
     modalImage.src = project.image;
     modalTitle.textContent = project.title;
-    modalLink.href = projectUrl;
+    modalLink.href = project.url;
     
     modal.style.display = "block";
 }
