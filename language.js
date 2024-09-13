@@ -3,15 +3,18 @@ const translations = {
         "firstItem": "Look my portfolio !",
         "secondItem": "This project Repository",
         "project1" :"Project 1",
-        "project2" :"Project 2",
-        "project3" :"Project 3"
+        "project2" :"Student Attendance System",
+        "project3" :"Rich Text Editor",
+        "footer" :"Made by Johnny Alysson"
     },
     "PT-BR": {
         "firstItem": "Ver meu portfólio",
         "secondItem": "Repositório desse projeto",
         "project1" :"Projeto 1",
-        "project2" :"Projeto 2",
-        "project3" :"Projeto 3"
+        "project2" :"Sistema de chamada de alunos",
+        "project3" :"Editor de texto",
+        "footer" :"Feito com ♥ por Johnny Alysson baseado no curso Discovery da Rockseat",
+
     }
 };
 

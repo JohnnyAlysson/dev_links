@@ -12,88 +12,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevLinks</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="language.css" />
+    <link rel="stylesheet" href="./language.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./modal.css" />
   </head>
-  <body>
+<body>
     <div id="container">
-      <div id="profile">
-        <img
-          src="./assets/avatar.png"
-          alt="Foto Johnny Alysson"
-        />
-      </div>
+        <div id="profile">
+            <img src="./assets/avatar.png" alt="Foto Johnny Alysson">
+        </div>
 
-      <div id="switch" onclick="toggleMode()">
-        <button></button>
-        <span></span>
-      </div>
+        <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
+        </div>
 
-      <div id="switchLanguage" onclick="change">
         <input type="checkbox" id="language-toggle">
-        <label id="button" for="language-toggle">
-            <div id="knob"></div>
-            <div id="language-text">PT-BR</div>
+        <label for="language-toggle" id="button">
+          <div id="knob"></div>
+          <span id="language-text">PT-BR</span>
         </label>
-      </div>
 
-      <ul>
+        <ul>
+            <li>
+                <a href="#" id="firstItem" data-key="firstItem" onclick="showModal('portfolio', 'https://johnnytec.com')">Ver meu portfólio</a>
+            </li>
+            <li>
+                <a href="#" id="secondItem" data-key="secondItem" onclick="showModal('repo', '#')">Repositório desse projeto</a>
+            </li>
+            <li>
+                <a href="#" id="project1" data-key="project1" onclick="showModal('project1', '#')">projeto 1</a>
+            </li>
+            <li>
+                <a href="#" id="project2" data-key="project2" onclick="showModal('project2', 'https://github.com/JohnnyAlysson/Desafio_test')">Sistema de presença de alunos</a>
+            </li>
+            <li>
+                <a href="#" id="project3" data-key="project3" onclick="showModal('project3', 'https://github.com/JohnnyAlysson/Rich-text-editor')">Rich text Editor</a>
+            </li>
+        </ul>
 
-        <li>
-          <a id="firstItem" data-key="firstItem" href="https://johnnytec.com" target="_blank">Ver meu portfólio</a>
-        </li>
+        <div id="social-links">
+            <a href="https://github.com/JohnnyAlysson" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/johnnyalysson" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://www.youtube.com/@JohnnyTechRoad" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+        </div>
 
-        <li>
-          <a href="" id="secondItem" data-key="secondItem" target="_blank">Repositório desse projeto</a>
-        </li>
-
-        <li>
-          <a href="" id="project1" data-key="project1" target="_blank"
-            >projeto 1</a
-          >
-        </li>
-
-        <li>
-          <a href="https://github.com/JohnnyAlysson/Desafio_test" id="project2" data-key="project2"  target="_blank"
-            >Sistema de presença de alunos</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/JohnnyAlysson/Rich-text-editor" id="project3" data-key="project3" target="_blank"
-            >Rich text Edtitor</a
-          >
-        </li>
-      </ul>
-
-      <div id="social-links">
-        <a href="https://github.com/JohnnyAlysson" target="_blank">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-
-        <a href="https://www.linkedin.com/in/johnnyalysson" target="_blank">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-
-        <a href="https://www.youtube.com/@JohnnyTechRoad" target="_blank">
-          <ion-icon name="logo-youtube"></ion-icon>
-        </a>
-
-      </div>
-
+        <footer>
+            <p data-key="footer">Feito com ♥ por Johnny Alysson baseado no curso Discovery da Rockseat</p>
+        </footer>
     </div>
 
-    
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="projectImage" src="" alt="Project Image">
+            <h2 id="projectTitle"></h2>
+            <a id="projectLink" href="#" target="_blank" class="visit-btn">Visit Project</a>
+        </div>
+    </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-
-    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
     <script src="./language.js"></script>
-  </body>
+</body>
 </html>
