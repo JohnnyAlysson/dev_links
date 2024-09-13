@@ -1,12 +1,18 @@
 const translations = {
-  "en": {
-      "greeting": "Hello",
-      "farewell": "How are you today?"
-  },
-  "tr": {
-      "greeting": "Merhaba",
-      "farewell": "Bugün Nasılsın?"
-  }
+    "en": {
+        "firstItem": "Look my portfolio !",
+        "secondItem": "This project Repository",
+        "project1" :"Project 1",
+        "project2" :"Project 2",
+        "project3" :"Project 3"
+    },
+    "PT-BR": {
+        "firstItem": "Ver meu portfólio",
+        "secondItem": "Repositório desse projeto",
+        "project1" :"Projeto 1",
+        "project2" :"Projeto 2",
+        "project3" :"Projeto 3"
+    }
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -14,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const languageText = document.getElementById('language-text');
 
   languageToggle.addEventListener('change', () => {
-      const language = languageToggle.checked ? 'en' : 'tr';
+      const language = languageToggle.checked ? 'en' : 'PT-BR';
       localStorage.setItem('preferredLanguage', language);
       languageText.textContent = language === 'en' ? 'English' : 'PT-BR';
       loadLanguage(language);
@@ -32,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   }
 
-  const preferredLanguage = localStorage.getItem('preferredLanguage') || 'tr';
+  const preferredLanguage = localStorage.getItem('preferredLanguage') || 'PT-BR';
   languageToggle.checked = (preferredLanguage === 'en');
   languageText.textContent = preferredLanguage === 'en' ? 'English' : 'PT-BR';
   loadLanguage(preferredLanguage);
