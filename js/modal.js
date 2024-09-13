@@ -19,17 +19,17 @@ function showModal(projectId) {
         project1: {
             title: "POS System",
             image: "./assets/project1.jpg",
-            url: "https://github.com/JohnnyAlysson/projeto_ux_ui"
+            url: "https://github.com/JohnnyAlysson/projeto_ux_ui",
           },
         project2: {
             title: "Student Attendance System",
             image: "./assets/project2.jpg",
-            url: "https://github.com/JohnnyAlysson/projeto_ux_ui"
-          },
+            url: "https://github.com/JohnnyAlysson/Desafio_test"
+        },
         project3: {
             title: "Rich Text Editor",
             image: "./assets/project3.jpg",
-            url: "https://github.com/JohnnyAlysson/projeto_ux_ui"
+            url: "https://github.com/JohnnyAlysson/Rich-text-editor"
         }
     };
 
